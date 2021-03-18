@@ -14,8 +14,9 @@ Train the C3D network with my own data set. Video or gif can be supported as a t
 * cudnn 6
 ## Train your own data
 * Place the data in the `datasets/ucf101`. The label for training (train_file.txt), label for testing (test_file.txt), are placed in the `/ucfTrainTestlist`. Record category in classInd.txt.
+ Run the `video2list.py` to get the label for training (`train_file.txt`), the label for testing (`test_file.txt`), and the record category (`classInd.txt`), which are all placed in the `/ucfTrainTestlist`
 
-* Run `video2img.py` and save it in the datasets/ucfimgs. Currently gif and video formats are supported.
+* Run  Run the `video2list.py` to get the label for training (`train_file.txt`), the label for testing (`test_file.txt`), and the record category (`classInd.txt`), which are all placed in the `/ucfTrainTestlist``video2img.py` and save it in the datasets/ucfimgs. Currently gif and video formats are supported.
 
 * Run `make_label_txt.py` and generate train_list.txt and test_list.txt.
 
